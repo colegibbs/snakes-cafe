@@ -11,6 +11,12 @@ def print_dishes(dish_type):
   for dish in dish_type:
     print(dish)
 
+# dish types
+appetizers =["Wings", "Cookies", "Spring Rolls"]
+entrees = ["Salmon", "Steak", "Meat Tornado", "A Literal Garden"]
+desserts = ["Ice Cream", "Cake", "Pie"]
+drinks = ["Coffee", "Tea", "Unicorn Tears"]
+
 print("""$ python snakes_cafe.py
 **************************************
 **    Welcome to the Snakes Cafe!   **
@@ -23,6 +29,7 @@ print("""Appetizers
 ----------""")
 
 #loop function to render appetizers
+
 
 print("""Entrees
 -------""")
