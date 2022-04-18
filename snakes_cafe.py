@@ -1,4 +1,11 @@
 # render dictionaries
+def create_dictionary(*dish_list):
+  dishes = {}
+  for list in dish_list:
+    for dish in list:
+      dishes[dish] = 0
+  return dishes
+
 # loop and print functions for the dish lists
 
 print("""$ python snakes_cafe.py
