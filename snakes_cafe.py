@@ -1,5 +1,5 @@
 # render dictionaries
-def create_dictionary(*dish_list):
+def create_dict(*dish_list):
   dishes = {}
   for list in dish_list:
     for dish in list:
@@ -56,3 +56,17 @@ print("""***********************************
 # while loop that handles input 
   # needs to input("> ")
   #plural vs non-plural
+dishes = create_dict(appetizers, entrees, desserts, drinks)
+
+while True:
+  order = input("> ")
+  if order == "quit":
+    break
+  dishes[order] += 1
+  if(order.endswith("s")):
+    print(f'There is {dishes[order]} order of {order} in your order' if dishes[order] == 1 else f'There are {dishes[order]} orders of {order} in your order')
+  elif dishes[order] == 1:
+    print(f"There is {dishes[order]} {order} dish in your order")
+  else:
+    print(f"There are {dishes[order]} {order} dishes in your order")
+  
