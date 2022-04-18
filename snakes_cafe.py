@@ -29,22 +29,25 @@ print("""Appetizers
 ----------""")
 
 #loop function to render appetizers
-
+print_dishes(appetizers)
 
 print("""Entrees
 -------""")
 
 #loop function to render entrees
+print_dishes(entrees)
 
 print("""Desserts
 --------""")
 
 #loop function to render desserts
+print_dishes(desserts)
 
 print("""Drinks
 ------""")
  
- #loop function to render drinks
+#loop function to render drinks
+print_dishes(drinks)
 
 print("""***********************************
 ** What would you like to order? **
