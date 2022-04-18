@@ -7,6 +7,9 @@ def create_dictionary(*dish_list):
   return dishes
 
 # loop and print functions for the dish lists
+def print_dishes(dish_type):
+  for dish in dish_type:
+    print(dish)
 
 print("""$ python snakes_cafe.py
 **************************************
